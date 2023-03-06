@@ -33,7 +33,7 @@ public class FlameController {
 	@GetMapping("/flames/{boyName}/{girlName}")
 	public ResponseEntity<Flame> saveFlameHandler(@PathVariable("boyName") String boyName,@PathVariable("girlName") String girlName)throws FlameException{
 		
-		return new ResponseEntity<Flame>(fService.saveFlame(boyName, girlName),HttpStatus.ACCEPTED);
+		return new ResponseEntity<Flame>(fService.saveFlame(boyName.toLowerCase(), girlName.toLowerCase()),HttpStatus.ACCEPTED);
 	}
 	
 	
