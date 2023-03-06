@@ -25,7 +25,7 @@ public class FlameController {
 	this.fService = fService;
 	}
 
-	@GetMapping("/hello")
+	@GetMapping("/")
 	public String hello() {
 		return "Hello World";
 	}

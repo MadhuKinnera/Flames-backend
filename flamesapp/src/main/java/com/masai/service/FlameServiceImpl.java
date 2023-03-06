@@ -98,6 +98,7 @@ public class FlameServiceImpl implements FlameService {
 //		System.out.println(list1);
 //		System.out.println(list2);
 
+		
 		int n = list1.size()+list2.size();
 
 		List<Character> flames = new ArrayList<>();
